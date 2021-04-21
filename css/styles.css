@@ -1,0 +1,358 @@
+#site_body {
+    width: 100%;
+    height: 100%;
+}
+
+#map {
+    height: 100%;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#description {
+    font-family: Roboto, sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+#infowindow-content .title {
+    font-weight: bold;
+}
+
+#infowindow-content {
+    display: none;
+}
+
+#map #infowindow-content {
+    width: calc(100% - 400px);
+    display: inline;
+}
+
+.gm-fullscreen-control {
+    display: none;
+}
+
+.pac-card {
+    margin: 10px 10px 0 0;
+    border-radius: 2px 0 0 2px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    outline: none;
+    background-color: #fff;
+    font-family: Roboto, sans-serif;
+}
+
+.pac-controls {
+    display: inline-block;
+    padding: 5px 11px;
+}
+
+.pac-controls label {
+    font-family: Roboto, sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+#pac-input {
+    background-color: #fff;
+    font-family: Roboto, sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 12px;
+    padding: 0 11px 0 13px;
+    text-overflow: ellipsis;
+    width: 400px;
+}
+
+#pac-input:focus {
+    border-color: #4d90fe;
+}
+
+#title {
+    color: #fff;
+    background-color: #4d90fe;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 6px 12px;
+}
+
+/*switch*/
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    display: none;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #2196F3;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+p {
+    display: block;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.list {
+    width: 197px;
+}
+
+.from_to_lists {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+}
+
+.position_list {
+    margin: 100px 0 10px 10px;
+    padding: 10px;
+    width: 400px;
+    height: calc(100% - 160px);
+    position: fixed;
+    background-color: #ffffff;
+    z-index: 1000;
+}
+
+.check_switch {
+    margin-bottom: 12px;
+    padding: 0 8px;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+}
+
+.switch_text_item {
+    font-family: Roboto, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.chose_text {
+    padding-top: 8px;
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #bfbfbf;
+}
+
+#pac-input {
+    margin: 10px;
+    padding: 6px;
+}
+
+.chosen_point {
+    margin: 8px 0;
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #d7d7d7;
+}
+
+.shadow {
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.button_style {
+    border: none;
+    color: white;
+    background-color: #2196F3;
+    padding: 10px 14px;
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    position: fixed;
+    cursor: pointer;
+    border-radius: 16px;
+    z-index: 2000;
+}
+
+.button_style:hover {
+    background-color: #4DAAFF;
+}
+
+.button_style:active {
+    background-color: #73BBFF;
+}
+
+.send_button {
+    margin: calc(100vh - 96px) 0 0 140px;
+}
+
+.route_button {
+    margin: calc(100vh - 96px) 0 0 calc(100vw - 260px);
+}
+
+/* 2 window */
+
+#floating-panel {
+    position: absolute;
+    top: 10px;
+    left: 25%;
+    z-index: 5;
+    background-color: #fff;
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    line-height: 30px;
+    vertical-align: text-top;
+    display: flex;
+    flex-direction: row;
+}
+
+.main_select {
+    max-width: 250px;
+    padding: 4px 2px;
+    margin: 6px;
+}
+
+.text_style {
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    color: #000;
+}
+
+.select_text_style {
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    color: #000;
+}
+
+option {
+    padding: 4px 2px;
+}
+
+.route_title {
+    font-family: Roboto, sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #2196F3;
+    padding: 0 6px;
+    margin-right: 8px;
+}
+
+.p_option {
+    margin: 6px 8px;
+}
+
+.b_option {
+    margin: 6px;
+    font-family: Roboto, sans-serif;
+    font-size: 22px;
+    color: #000;
+    padding: 0 6px;
+}
+
+#is_get_route {
+    display: none;
+}
+
+.input_sup_data {
+    width: 90px;
+    height: 28px;
+    margin: 0;
+    padding: 0 0 0 4px;
+    font-family: Roboto, sans-serif;
+}
+
+.sup_p {
+    font-family: Roboto, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+#carrying_p { grid-area: carrying_p; }
+#kg_point { grid-area: kg_point; }
+#earliest_p { grid-area: earliest_p; }
+#latest_p { grid-area: latest_p; }
+#day_latest { grid-area: day_latest; }
+#time_earliest { grid-area: time_earliest; }
+#time_latest { grid-area: time_latest; }
+
+.point-grid-container {
+    display: grid;
+    grid-template-areas:
+    'earliest_p latest_p carrying_p'
+    'day_earliest day_latest kg_point'
+    'time_earliest time_latest kg_point';
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.point-grid-container > div {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+#downtime_p { grid-area: downtime_p; }
+#downtime_input { grid-area: downtime_input; }
+#truck_capacity_p { grid-area: truck_capacity_p; }
+#truck_capacity_input { grid-area: truck_capacity_input; }
+.spacer { grid-area: spacer; }
+
+
+.car-grid-container {
+    display: grid;
+    grid-template-areas:
+    'downtime_p truck_capacity_p spacer'
+    'downtime_input truck_capacity_input spacer';
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.car-grid-container > div {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
